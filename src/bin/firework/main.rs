@@ -13,7 +13,7 @@ use args::Cli;
 use clap::Parser;
 use crossterm::{
     cursor,
-    event::{self, KeyCode},
+    event::{self, KeyEventKind},
     execute, terminal,
 };
 use firework_rs::term::Terminal;
@@ -94,7 +94,10 @@ fn main() -> Result<()> {
         if event::poll(Duration::ZERO)? {
             match event::read()? {
                 event::Event::Key(e) => {
-                    if e.code == KeyCode::Esc {
+                    // Any key quits, Ctrl+C included (raw mode turns it into
+                    // a key); Esc was the only one (Asciiverse). Windows also
+                    // reports releases, which must not count.
+                    if e.kind == KeyEventKind::Press {
                         is_running = false;
                     }
                 }
