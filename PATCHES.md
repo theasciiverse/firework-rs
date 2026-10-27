@@ -58,3 +58,9 @@ av starts it as `firework` with no arguments.
   120x40 it keeps running and x quits.
 - Windows and macOS: `cargo check` for x86_64-pc-windows-msvc and
   aarch64-apple-darwin passes; not run.
+
+## Ours
+
+- **How to play it, at the top of README.md.** A short note on installing and
+  starting it with av, or from a release archive; the original text follows
+  unchanged.

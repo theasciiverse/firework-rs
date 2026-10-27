@@ -1,3 +1,16 @@
+> **Play it with Asciiverse.** With [av](https://asciiverse.sh), the Asciiverse
+> client:
+>
+> ```
+> av install firework-rs
+> av play firework-rs
+> ```
+>
+> Or download the archive for your system from this repository's Releases,
+> unpack it and run `./firework` (`firework.exe` on Windows).
+>
+> The original README follows.
+
 <h1 align="center">
 <br>
 <img src="https://raw.githubusercontent.com/Wayoung7/firework-rs/master/gif/demo_0.gif" alt="gif" width="800">
