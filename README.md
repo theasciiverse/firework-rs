@@ -6,9 +6,6 @@
 > av play firework-rs
 > ```
 >
-> Or download the archive for your system from this repository's Releases,
-> unpack it and run `./firework` (`firework.exe` on Windows).
->
 > The original README follows.
 
 <h1 align="center">
